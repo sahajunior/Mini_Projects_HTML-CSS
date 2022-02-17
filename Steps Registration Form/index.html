@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Steps Registration Form</title>
+</head>
+
+<body>
+    <input class="checkbox" type="checkbox" id="start">
+    <input class="checkbox" type="checkbox" id="progressTwo">
+    <input class="checkbox" type="checkbox" id="progressThree">
+    <input class="checkbox" type="checkbox" id="finish">
+    <div class="form-progress"></div>
+
+    <div class="container">
+        <div class="welcome">Welcome Aboard!</div>
+        <form class="form" action="">
+            <div class="form-group">
+                <label class="form-label" for="username">
+                    <input type="text" id="username" class="form-input" placeholder=" " pattern="[^\s]+" required>
+
+                    <label class="form-next" for="progressTwo" role="button">
+                        <span class="form-next-icon"></span>
+                    </label>
+
+                    <span class="form-group-label">Create your username.</span>
+                    <b class="form-border"></b>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="femail">
+                    <input type="email" id="email" class="form-input" placeholder=" "
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+
+                    <label class="form-next" for="progressThree" role="button">
+                        <span class="form-next-icon"></span>
+                    </label>
+
+                    <span class="form-group-label">What's your email?</span>
+                    <b class="form-border"></b>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="pass">
+                    <input type="password" id="pass" class="form-input" placeholder=" " required>
+
+                    <label class="form-next" for="finish" role="button">
+                        <span class="form-next-icon"></span>
+                    </label>
+
+                    <span class="form-group-label">Create your password.</span>
+                    <b class="form-border"></b>
+                </label>
+            </div>
+
+            <label class="form-toggle" for="start">Register<span class="form-toggle-icon"></span></label>
+        </form>
+    </div>
+</body>
+
+</html>
