@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #090221;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 420px;
+            background: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 20px;
+            transition: 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card h3 {
+            color: #003566;
+        }
+
+        .details ul {
+            width: 200px;
+            height: 180px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .details ul li {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .details i {
+            display: block;
+            width: 30px;
+        }
+
+        .fa-check {
+            color: #47d147;
+        }
+
+        .fa-times {
+            color: #ff3333;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .card p span {
+            font-size: 45px;
+            font-weight: 600;
+            color: #003566;
+        }
+
+        button {
+            width: 260px;
+            height: 40px;
+            font-size: 17px;
+            border: none;
+            outline: none;
+            background: #ffc300;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            color: #fff;
+            box-shadow: 0 9px 14px rgba(65, 63, 63, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+        }
+    </style>
+    <title>Pricing Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Basic</h3>
+            <div class="details">
+                <ul>
+                    <li><i class="fas fa-check"></i>Single Domain</li>
+                    <li><i class="fas fa-check"></i>10 GB Disk Space</li>
+                    <li><i class="fas fa-check"></i>1 Email</li>
+                    <li><i class="fas fa-check"></i>Free cPanel</li>
+                    <li><i class="fas fa-times"></i>Free SSL</li>
+                </ul>
+            </div>
+            <p>$<span>20</span></p>
+            <button>Subscribe</button>
+        </div>
+    </div>
+</body>
+
+</html>
